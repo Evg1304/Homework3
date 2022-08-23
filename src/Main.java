@@ -25,12 +25,21 @@ public class Main {
             System.out.println("для IOS по ссылке.");
         }
         //Задание 3
-        //Не поняла
+        var year = 2020;
+        if (year%4==0 && year%100!=0 || year%400==0){
+            System.out.println("Год високосный.");
+        }
+        else {
+            System.out.println("Год не високосный.");
+        }
 
         //Задание 4
         int deliveryDistance = 95;
-        if (deliveryDistance <= 20){
-            System.out.println("Потребуется дней: 1");
+        int start = 20;
+        int interval = 40;
+        int day = 1;
+        if (deliveryDistance <= start){
+            System.out.println("Потребуется дней:"+ day++);
         }
         if (deliveryDistance <= 60 && deliveryDistance >20){
             System.out.println("Потребуется дней: 2");
@@ -60,6 +69,7 @@ public class Main {
                 System.out.println("Зима");
             default:
                 System.out.println("Нет такого месяца!");
+                
 
 
 
